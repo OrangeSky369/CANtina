@@ -83,6 +83,7 @@ TPCANHandle PcanInitializer::InitializeChannel(TPCANHandle channel, TPCANBaudrat
     return channel; // Return the handle if successful
 }
 
+// TPCANHandle PcanInitializer::InitializeChannelFD(TPCANHandle channel, const std::string& bitrateFD) {
 TPCANHandle PcanInitializer::InitializeChannelFD(TPCANHandle channel, const std::string& bitrateFD) {
     if (!loaded_successfully_ || !m_CAN_InitializeFD) {
         throw std::runtime_error("PCAN library not loaded or CAN_InitializeFD function not found.");

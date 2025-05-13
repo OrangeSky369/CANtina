@@ -4,7 +4,7 @@
 #ifdef _WIN32
 #include <windows.h> // For HMODULE, LoadLibrary, GetProcAddress, FreeLibrary, DWORD, WORD etc.
 #endif
-#include "external/pcan/PCANBasic.h" // Include the PCAN header
+#include "pcan/PCANBasic.h" // Include the PCAN header
 #include <string>
 #include <stdexcept> // For runtime_error
 
