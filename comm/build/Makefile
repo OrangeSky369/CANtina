@@ -197,29 +197,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/pcan_initializer.obj: src/pcan_initializer.cpp.obj
-.PHONY : src/pcan_initializer.obj
+src/pcan_uds_handler.obj: src/pcan_uds_handler.cpp.obj
+.PHONY : src/pcan_uds_handler.obj
 
 # target to build an object file
-src/pcan_initializer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_initializer.cpp.obj
-.PHONY : src/pcan_initializer.cpp.obj
+src/pcan_uds_handler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_uds_handler.cpp.obj
+.PHONY : src/pcan_uds_handler.cpp.obj
 
-src/pcan_initializer.i: src/pcan_initializer.cpp.i
-.PHONY : src/pcan_initializer.i
+src/pcan_uds_handler.i: src/pcan_uds_handler.cpp.i
+.PHONY : src/pcan_uds_handler.i
 
 # target to preprocess a source file
-src/pcan_initializer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_initializer.cpp.i
-.PHONY : src/pcan_initializer.cpp.i
+src/pcan_uds_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_uds_handler.cpp.i
+.PHONY : src/pcan_uds_handler.cpp.i
 
-src/pcan_initializer.s: src/pcan_initializer.cpp.s
-.PHONY : src/pcan_initializer.s
+src/pcan_uds_handler.s: src/pcan_uds_handler.cpp.s
+.PHONY : src/pcan_uds_handler.s
 
 # target to generate assembly for a file
-src/pcan_initializer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_initializer.cpp.s
-.PHONY : src/pcan_initializer.cpp.s
+src/pcan_uds_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pcan_test.dir\build.make CMakeFiles/pcan_test.dir/src/pcan_uds_handler.cpp.s
+.PHONY : src/pcan_uds_handler.cpp.s
 
 # Help Target
 help:
@@ -237,9 +237,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/pcan_initializer.obj
-	@echo ... src/pcan_initializer.i
-	@echo ... src/pcan_initializer.s
+	@echo ... src/pcan_uds_handler.obj
+	@echo ... src/pcan_uds_handler.i
+	@echo ... src/pcan_uds_handler.s
 .PHONY : help
 
 

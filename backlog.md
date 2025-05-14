@@ -1,6 +1,7 @@
 # 1 PG3 (仅底层，仅C++)
 ## 1.1 Initialization
 1. Initialization的各种参数比如PCAN_USBBUS1和波特率等都写死
+500 + 2M: "f_clock_mhz=80, nom_brp=10, nom_tseg1=12, nom_tseg2=3, nom_sjw=3, data_brp=4, data_tseg1=7, data_tseg2=2, data_sjw=1"
 
 ## 1.2 单帧收发
 1. 进取版：使用PCAN-ISO-TP将data结构化，并且使用PCAN-UDS进一步结构化

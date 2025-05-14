@@ -13,7 +13,7 @@ include_directories(include)
 # Add the executable target
 add_executable(pcan_test
     src/main.cpp
-    src/pcan_initializer.cpp
+    src/pcan_uds_handler.cpp
 )
 
 # Tell the executable where to find the include files
@@ -34,16 +34,16 @@ install(TARGETS pcan_test
     RUNTIME DESTINATION bin # Installs .exe to <prefix>/bin
 )
 
-# Copy the PCANBasic.dll to the install directory next to the executable
-install(FILES ${CMAKE_SOURCE_DIR}/lib/PCANBasic.dll
+# Copy the PCAN-UDS.dll to the install directory next to the executable
+install(FILES ${CMAKE_SOURCE_DIR}/lib/PCAN-UDS.dll
     DESTINATION bin # Installs DLL to <prefix>/bin
     COMPONENT Runtime # Only install DLL when installing the runtime component
 )
 
 
 message(STATUS "PCAN Test executable configured.")
-message(STATUS "Source files: src/main.cpp src/pcan_initializer.cpp")
+message(STATUS "Source files: src/main.cpp src/pcan_uds_handler.cpp")
 message(STATUS "Include directory: ${CMAKE_SOURCE_DIR}/include")
 message(STATUS "To build, navigate to your build directory and run 'cmake --build .' ")
 message(STATUS "The executable 'pcan_test.exe' will be in the build/bin directory.")
-message(STATUS "Ensure PCANBasic.dll is either in the same directory as pcan_test.exe or in the system PATH.") 
+message(STATUS "Ensure PCAN-UDS.dll is either in the same directory as pcan_test.exe or in the system PATH.") 
